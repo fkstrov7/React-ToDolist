@@ -1,7 +1,7 @@
 import React from "react";
 import TodoItem from "./TodoItem";
 
-function TodoList({ task, onToogleComplete, onDeleteTask}){
+function TodoList({ tasks, onToogleComplete, onDeleteTask}){
     return(
         <ul>
             {tasks.map(task =>(
@@ -13,9 +13,7 @@ function TodoList({ task, onToogleComplete, onDeleteTask}){
                 />
             ))}
         </ul>
-
     );
-
 }
 
 export default TodoList;
